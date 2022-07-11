@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="fr" xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout}">
+<head>
+    <title>Cagnottes</title>
+</head>
+<body>
+<div layout:fragment="content">
+    <div>
+        <h4>Cagnottes</h4>
+        <div sec:authorize="hasAuthority('ROLE_ADMIN')">
+            <button class="uk-button uk-button-primary">Créer une cagnotte</button>
+        </div>
+    </div>
+</div>
+</body>
+</html>
